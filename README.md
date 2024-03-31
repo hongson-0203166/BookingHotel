@@ -13,8 +13,13 @@ Hotel
     ]
   }
 
+
   Pull All hotel with site 
   http://localhost:8000/hotel/getAllHotelSite/H%C3%A0%20N%E1%BB%99i
+
+
+
+
 
 
 Room
@@ -38,6 +43,11 @@ Room
     "hotel": "66084296254e89a1f5b261d2"
 }
 
+
+
+
+
+
 Customer
 add customer
   http://localhost:8000/hotel/addCustomer/
@@ -48,12 +58,16 @@ add customer
 }
 
 
+
 get customer with name
 http://localhost:8000/hotel/getAllCustomerwithName/s%C6%A1n
 
 
 
+
+
 Booking
+  add Booking 
   localhost:8000/hotel/booking/
   {
                 "customer": "6608d5344c20296168e9433b",
