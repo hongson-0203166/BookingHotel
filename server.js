@@ -17,7 +17,10 @@ const bookingRoute = require("./Routes/bookingRoute.js");
 
 //Connect Database
 dotenv.config();
-mongoose.connect(process.env.MONGODB_URL)
+
+
+// Connect to MongoDB using the value of MONGODB_URL from .env
+mongoose.connect(process.env.MONGODB_URL, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log('Connected to MongoDB Atlas');
     // Các hoạt động với MongoDB ở đây
@@ -25,6 +28,7 @@ mongoose.connect(process.env.MONGODB_URL)
   .catch(error => {
     console.error('Error connecting to MongoDB Atlas:', error.message);
   });
+
 
 
 app.use(bodyParser.json({limit:"50mb"}));
